@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atributos Imput</title>
 </head>
+
 <body>
     <h1>Atributos Imput</h1>
     <hr>
@@ -17,9 +19,11 @@
     <!--list: crea una lista que se une con datalist-->
     <!--pattern solo deaj escribir lo que se le coleque en los corchetes-->
     <!--method: es para colocar el metodo de encriptado que ba unido con "label for pass"-->
-    <form acction="" method="post">
+    <!--method="post" sirve para encriptar-->
+    <form acction="https://www.google.com/search">
         <label for="fnombre">Escoja su navegador</label>
-        <input type="text" name="fnombre" id="fnombre" maxlength="10" minlength="2" placeholder="Ingrse su nombre" size="10" list="browser" value="Chrome" pattern="[a-zA-Z]{1.15}" >
+        <input type="text" name="fnombre" id="fnombre" maxlength="10" minlength="2" placeholder="Ingrse su nombre"
+            size="10" list="browser" value="Chrome" pattern="[a-zA-Z]{1.15}">
         <!--<datalist id="browser">
             <option value="Chrome"></option>
             <option value="Edge"></option>
@@ -34,26 +38,103 @@
         <br><br>
         <!--crea el boton enviar-->
         <br><br>
+        <!--crea una serie de opcines para escojer-->
         Lenguaje de progrmacion favorito:
         <br>
-        <input type="radio" name="lengprog" id="Ada">
+        <input type="radio" name="lengprog" id="Ada" value="Ada">
         <label for="lengprog">Ada</label>
         <br>
-        <input type="radio" 
-        name="lengprog" id="Python" checked>
+        <input type="radio" name="lengprog" id="Python" value="Python" checked>
         <label for="lengprog">Python</label>
         <br>
-        <input type="radio" name="lengprog" id="Java">
+        <input type="radio" name="lengprog" id="Java" value="Java">
         <label for="lengprog">Java</label>
         <br>
-        <input type="radio" name="lengprog" id="JavaScript">
+        <input type="radio" name="lengprog" id="JavaScript" value="JavaScript">
         <label for="lengprog">JavaScript</label>
         <br><br>
-        <input type="submit" 
-        value="Enviar">
-        <!--crea el boton para limpiar-->
-        <input type="Reset" value="Limpiar">
+
+        <br><br>
+        <!--crea una sereie de opciones para escojer tipo caja y con varios checs-->
+        pasatiempos
+        <br>
+        <input type="checkbox" name="pasatiempos" id="leer" value="leer" checked>
+        <label for="leer">leer</label>
+        <br>
+        <input type="checkbox" name="pasatiempos" id="cine" value="cine" checked>
+        <label for="cine">Cine</label>
+        <br>
+        <input type="checkbox" name="pasatiempos" id="gym" value="gym">
+        <label for="gym">Gym</label>
+        <br>
+        <input type="checkbox" name="pasatiempos" id="comer" value="comer">
+        <label for="comer">Comer</label>
+        <br><br>
+
+        <!--sirve para que apresca un mensaje cuando se del clik-->
+        <input type="button" value="ver emnsaje" onclick="alert('Feliz Hallowen')">
+        <br><br>
+        <!--sirve para que pueda escojer el color-->
+        <label for="colorfv">Escoja un color</label>
+        <input type="color" name="colorfv" id="colorfv">
+        <br><br>
+        <!--sirve para que pueda escojer la fecha-->
+        <label for="fechanac">Fecha de nacimiento</label>
+        <input type="date" name="fechanac" id="fechanac">
+        <br><br>
+        <label for="fechanac">Ingrese una fehca anterior al 2000/01/01/label>
+            <input type="date" name="fechanac" id="fechanac" max="1999-12-31">
+            <br>
+            <label for="fechanac">Ingrese una fehca posterior al 2020/01/01/label>
+                <input type="date" name="fechanac" id="fechanac" min="2020-01-02">
+                <br><br>
+                <label for="fecha-hora-nac">Fecha y hora de nacimiento</label>
+                <input type="datetime-local" name="fecha-hora-nac" id="fecha-hora-nac">
+                <br><br>
+                <!--esto sive para colocar el correo-->
+                <label for="iemail">Ingrese su correo electronico</label>
+                <input type="email" name="iemail" id="iemail" required><!--required-->
+                <br><br>
+                <!--este sirve para colocar una imagen-->
+                <input type="image" src="../Introduccion/img/1000_F_611200772_GYGhQOAINLDRY9HSsbqN89nv0tu9DrpK.jpg"
+                    alt="Icono spiderman" width="50px" onclick="alert('No me quiero ir señor strak')">
+                <br><br>
+                <!--este sirve para escojer un archivo-->
+                <label for="archivo">Escoja un archivo</label>
+                <input type="file" name="archivo" id="archivo" accept=".png,.jpg.,gif">
+                <br><br>
+                <!--es informacion que se envia pero no se ve-->
+                <input type="hidden" name="estodoform" value="completo">
+                <br><br>
+                <!--este sirve para escoger el mes de nacimiento-->
+                <label for="mesnac">Mes de nacimiento</label>
+                <input type="month" name="mesnac" id="mesnac">
+                <br><br>
+                <!--este sirve para escojer la edad-->
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="18" max="40" value="18" step="2">
+                <br><br>
+                <!--sirve para colocar volumen-->
+                <label for="volumen">Seleccione el volumen</label>
+                <input type="range" name="volumen" id="volumen" min="10" max="50" step="5">
+                <br><br>
+                <!--sirve para buscar en google-->
+                <fieldset>
+                    <legend>Busqueda</legend>
+                    <label for="busqueda">Buscar en Google:</label>
+                    <input type="search" name="q" id="busqueda">
+                </fieldset>
+                <br><br>
+                <!--sirve para caja de comentarios-->
+                <label for="cometarios">Escriba sus comentarios:</label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+                <!--crea el boton para limpiar-->
+                <input type="Reset" value="Limpiar">
     </form>
-    
+
 </body>
+
 </html>
