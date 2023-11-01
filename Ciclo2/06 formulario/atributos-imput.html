@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos Imput</title>
+</head>
+<body>
+    <h1>Atributos Imput</h1>
+    <hr>
+    <br>
+    <!--crea la caja de entrada de informacion-->
+    <!--maxlength="5" minlength="2" son la logitud de carateres que puede escribir-->
+    <!--size: es el tamaño dela caja de texto-->
+    <!--value="Chrome: pone un texto predetermindo"-->
+    <!--readonly: solo deja leer no esciribir-->
+    <!--list: crea una lista que se une con datalist-->
+    <!--pattern solo deaj escribir lo que se le coleque en los corchetes-->
+    <!--method: es para colocar el metodo de encriptado que ba unido con "label for pass"-->
+    <form acction="" method="post">
+        <label for="fnombre">Escoja su navegador</label>
+        <input type="text" name="fnombre" id="fnombre" maxlength="10" minlength="2" placeholder="Ingrse su nombre" size="10" list="browser" value="Chrome" pattern="[a-zA-Z]{1.15}" >
+        <!--<datalist id="browser">
+            <option value="Chrome"></option>
+            <option value="Edge"></option>
+            <option value="Opera"></option>
+            <option value="Firefox"></option>
+
+        </datalist>-->
+        <br><br>
+        <!--sirve para colocar contraseñas-->
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <!--crea el boton enviar-->
+        <br><br>
+        Lenguaje de progrmacion favorito:
+        <br>
+        <input type="radio" name="lengprog" id="Ada">
+        <label for="lengprog">Ada</label>
+        <br>
+        <input type="radio" 
+        name="lengprog" id="Python" checked>
+        <label for="lengprog">Python</label>
+        <br>
+        <input type="radio" name="lengprog" id="Java">
+        <label for="lengprog">Java</label>
+        <br>
+        <input type="radio" name="lengprog" id="JavaScript">
+        <label for="lengprog">JavaScript</label>
+        <br><br>
+        <input type="submit" 
+        value="Enviar">
+        <!--crea el boton para limpiar-->
+        <input type="Reset" value="Limpiar">
+    </form>
+    
+</body>
+</html>
