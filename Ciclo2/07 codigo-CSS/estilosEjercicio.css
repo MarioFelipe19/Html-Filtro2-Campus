@@ -1,0 +1,58 @@
+#titulo {
+    color: rgb(17, 201, 63);
+    }
+    p strong{
+        color: rgb(233, 11, 11);
+        
+    }
+    .destacado {
+    color: rgb(206, 236, 35);
+    
+    }
+    #subtitulo {
+    color: rgb(17, 20, 201);
+    }
+    p a{
+        color: rgb(233, 11, 11);
+        
+    }
+    p em{
+        color: rgb(26, 11, 233);
+        
+    }
+    .especial {
+    color: rgb(236, 35, 186);
+    
+    }
+    table caption{
+        color: rgb(26, 11, 233);
+        
+    }
+    table, th, td  {
+        border: solid; border-color: black;
+    }
+    tr .especial  {
+    color: rgb(241, 245, 11);
+    
+    }
+    table  {
+    color: rgb(115, 236, 35);
+    
+    }
+    table strong  {
+    color: rgb(222, 236, 35);
+    
+    }
+    table tr th  {
+    color: rgb(236, 35, 35);
+    
+    }
+    #adicional {
+    color: rgb(71, 109, 50);
+    }
+    #adicional a{
+    color: rgb(18, 185, 46);
+    }
+    #especial{
+    color: rgb(140, 26, 155);
+    }
