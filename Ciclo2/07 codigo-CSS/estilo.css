@@ -1,0 +1,20 @@
+*{
+    color: gray;
+}
+p{
+    color: rgb(63, 165, 42);
+}
+.text-import {
+    color: red;
+    font-size: 1.5em;
+}
+#text-html {
+    color: blue;
+}
+div p sub{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, ;
+    font-style: italic;
+}
+u, i{
+    border: 1px solid red;
+}
