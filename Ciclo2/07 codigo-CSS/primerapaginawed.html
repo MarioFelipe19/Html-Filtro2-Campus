@@ -7,6 +7,8 @@
     <!--Esto es estilo de CSS selector tipo *-->
     <!--El estilo con p cambia los parrafos-->
     <!--.text-import para cambiar estilo-->
+    <!--div solo afecta segun la dereccion que se le de en este caso 'div p sub' cambia el sub dentro de un p-->
+    <!--u, i cambia todo dentro de lo que esta en u y i-->
     <style>
         *{
             color: gray;
@@ -21,6 +23,13 @@
         #text-html {
             color: blue;
         }
+        div p sub{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, ;
+            font-style: italic;
+        }
+        u, i{
+            border: 1px solid red;
+        }
         
     </style>
 </head>
@@ -29,11 +38,14 @@
     <h1 align="center" style="color:rgb(240, 10, 56); font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Mi priemra pagian WED</h1> 
     <!--hr coloca una linea horizontal y si se hace con xhtml toca cerrarla   -->
     <hr width="50%" align="right">  
-    <p class="text-import"> <!--class="text-import se en lasa con .text-import para cambiar estilo a todo en conjunto-->
-        <b>Lorem</b> <i>ipsum</i> <u>dolor</u>,<s>sit</s>  amet classconsectetur adipisicing <sup>elit</sup>. Magnam <sub>fugiat</sub> veritatis saepe quas unde quam sit cumque temporibus? Dolor minus quis veniam numquam possimus illum adipisci explicabo consequatur non id.0 &acute;rbol <!--sirve para que coloque tilde-->
-        <br><br>
-        sit amet consectetur adipisicing elit. Ad, natus fugiat fuga totam ab eveniet. Porro cumque temporibus, minus dolores facilis aspernatur animi expedita necessitatibus laudantium? Numquam reiciendis ducimus itaque?
-    </p>
+    <div>
+        <p class="text-import"> <!--class="text-import se en lasa con .text-import para cambiar estilo a todo en conjunto-->
+            <b>Lorem</b> <i>ipsum</i> <u>dolor</u>,<s>sit</s>  amet classconsectetur adipisicing <sup>elit</sup>. Magnam <sub>fugiat</sub> veritatis saepe quas unde quam sit cumque temporibus? Dolor minus quis veniam numquam possimus illum adipisci explicabo consequatur non id.0 &acute;rbol <!--sirve para que coloque tilde-->
+            <br><br>
+            sit amet consectetur adipisicing elit. Ad, natus fugiat fuga totam ab eveniet. Porro cumque temporibus, minus dolores facilis aspernatur animi expedita necessitatibus laudantium? Numquam reiciendis ducimus itaque?
+        </p>
+    </div>
+    
     <pre><!--Saca el texto en crudo-->
         <aside>ipsum dolor</aside> ipsum dolor sit, amet consectetur adipisicing elit. 
         

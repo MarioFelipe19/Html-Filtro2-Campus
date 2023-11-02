@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinacion de selectores</title>
+    <!--div div p + p colorea los que tengan un parrafo atras-->
+    <!--div + div span colorea a nieto-->
+    <style>
+        div div p + p{
+            color: tomato;
+        }
+        div + div span{
+            color: rebeccapurple;
+        }
+        div  div span{
+            font-weight: bold;
+        }
+        div  div div + p + div {
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abuelo">
+        <div class="padre">
+            <p>Hugo</p>
+            <p>Paco</p>
+            <p>Luis</p>
+
+            <div>
+                <span>Bisnieto</span>
+            </div>
+            <p>Primo</p>
+            <div>Sobrino</div>
+        </div>
+        <div class="Hermano">
+            <span>
+                Nieto
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
