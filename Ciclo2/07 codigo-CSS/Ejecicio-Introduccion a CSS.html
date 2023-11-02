@@ -1,0 +1,128 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ejercicio de selectores</title>
+    <style>
+        #titulo {
+    color: rgb(17, 201, 63);
+    }
+    p strong{
+        color: rgb(233, 11, 11);
+        
+    }
+    .destacado {
+    color: rgb(206, 236, 35);
+    
+    }
+    #subtitulo {
+    color: rgb(17, 20, 201);
+    }
+    p a{
+        color: rgb(233, 11, 11);
+        
+    }
+    p em{
+        color: rgb(26, 11, 233);
+        
+    }
+    .especial {
+    color: rgb(236, 35, 186);
+    
+    }
+    table caption{
+        color: rgb(26, 11, 233);
+        
+    }
+    table, th, td  {
+        border: solid; border-color: black;
+    }
+    tr .especial  {
+    color: rgb(241, 245, 11);
+    
+    }
+    table  {
+    color: rgb(115, 236, 35);
+    
+    }
+    table strong  {
+    color: rgb(222, 236, 35);
+    
+    }
+    table tr th  {
+    color: rgb(236, 35, 35);
+    
+    }
+    #adicional {
+    color: rgb(71, 109, 50);
+    }
+    #adicional a{
+    color: rgb(18, 185, 46);
+    }
+    #especial{
+    color: rgb(140, 26, 155);
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Lorem ipsum dolor sit amet</h1>
+    <p>Nulla pretium. Sed tempus nunc vitae neque. <strong>Suspendisse
+            gravida</strong>, metus a scelerisque sollicitudin, lacus velit
+        ultricies nisl, nonummy tempus neque diam quis felis. <span class="destacado">Etiam sagittis tortor</span> sed
+        arcu sagittis tristique.</p>
+    <h2 id="subtitulo">Aliquam tincidunt, sem eget volutpat porta</h2>
+    <p>Vivamus velit dui, placerat vel, feugiat in, ornare et, urna. <a href="#">Aenean turpis metus, <em>aliquam
+                non</em>, tristique in</a>, pretium
+        varius, sapien. Proin vitae nisi. Suspendisse <span class="especial">porttitor
+            purus ac elit</span>. Suspendisse eleifend odio at dui. In in elit sed metus
+        pretium elementum.</p>
+    <table  summary="Descripción de la tabla y su contenido"  >
+        <caption>Título de la tabla</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" class="especial">Título columna 1</th>
+                <th scope="col" class="especial">Título columna 2</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Título columna 1</th>
+                <th scope="col">Título columna 2</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row" class="especial">Título fila 1</th>
+                <td>Donec purus ipsum</td>
+                <td>Curabitur <em>blandit</em></td>
+            </tr>
+            <tr>
+                <th scope="row">Título fila 2</th>
+                <td>Donec <strong>purus ipsum</strong></td>
+                <td>Curabitur blandit</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="adicional">
+        <p>Donec purus ipsum, posuere id, venenatis at, <span>placerat ac, lorem</span>.
+            Curabitur blandit, eros sed gravida aliquet, risus justo
+            porta lorem, ut mollis lectus tortor in orci. Pellentesque nec augue.</p>
+        <p>Fusce nec felis eu diam pretium adipiscing. <span id="especial">Nunc elit elit,
+                vehicula vulputate</span>, venenatis in,
+            posuere id, lorem. Etiam sagittis, tellus in ultrices accumsan, diam nisi feugiat
+            ante, eu congue magna mi non nisl.</p>
+        <p>Vivamus ultrices aliquet augue. <a href="#">Donec arcu pede, pretium vitae</a>,
+            rutrum aliquet, tincidunt blandit, pede.
+            Aliquam in nisi. Suspendisse volutpat. Nulla facilisi. Ut ullamcorper nisi quis
+            mi.</p>
+    </div>
+</body>
+
+</html>
