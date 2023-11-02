@@ -31,6 +31,10 @@
     table, th, td  {
         border: solid; border-color: black;
     }
+    /* la tabla se realiza con dos combinaciones */
+    table{
+        border-collapse: collapse;
+    }
     tr .especial  {
     color: rgb(241, 245, 11);
     
