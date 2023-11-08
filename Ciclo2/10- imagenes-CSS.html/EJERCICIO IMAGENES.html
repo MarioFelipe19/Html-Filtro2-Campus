@@ -8,9 +8,13 @@
     <style>
         body {
             margin: 0% 5% 0% 5%;
+            padding: 0% 5% 0% 5%;
+            border: solid 1px;
+
 
         }
-        header{
+
+        header {
             display: flex;
 
         }
@@ -19,16 +23,72 @@
             color: darkgoldenrod;
             display: inline-block;
             display: flex;
-            justify-content: flex;
-            margin: 0% 0% 0% 0% ;
+            justify-content: flex-start;
+            margin: 1% 0% 0% 5%;
+
 
         }
 
         header article {
             display: inline-block;
-            margin: 2% 0% 5% 40% ;
+            margin: 2% 0% 5% 45%;
             display: flex;
             justify-content: flex-end;
+
+        }
+
+        main {
+            display: flex;
+            padding: 0% 0% 3% 0%;
+        }
+
+        #a1 {
+            background-color: rgb(233, 189, 216);
+            border-color: gray;
+            border-style: solid;
+            height: 300px;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        #a2 {
+            background-color: rgb(212, 240, 110);
+            border-color: gray;
+            border-style: dotted;
+            height: 300px;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+
+        }
+
+        #a4 {
+            border: 0px;
+            width: 60%;
+        }
+
+        #a5 {
+
+            border-color: orange;
+            border-style: solid;
+            height: 500px;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        #a6 {
+            border-color: orange;
+            border-style: solid;
+            background-color: orange;
+
+        }
+
+        #a7 {
+            border-color: orange;
+            border-style: solid;
+            background-color: orange;
         }
 
         nav div {
@@ -37,11 +97,11 @@
 
         footer nav {
             background-color: antiquewhite;
+            margin: 0% 0% 1% 0%;
         }
 
         #co {
-            text-align: right;
-
+            margin: 0% 0% 0% 30%;
         }
     </style>
 </head>
@@ -52,44 +112,81 @@
 
         <article id="bu">
             <label id="t1" for="busqueda">Buscar</label>
-            <input id="t1" type="search" name="q" id="busqueda">
+            <input size="15" id="t1" type="search" name="q" id="busqueda">
         </article>
-
     </header>
     <nav>
         <div>
             <a href="#">loremIpsumDoloreretrt</a>
         </div>
-
     </nav>
     <aside>
         <img src="" alt="">
     </aside>
     <main>
-        <article>
-            <section>
-                <h2> qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex cumque eius neque excepturi autem
-                    molestias nostrum dolore corporis, incidunt quia, fugit ipsam consequatur maiores, aspernatur
-                    distinctio omnis in aliquam.</p>
-            </section>
-            <footer>
-                <a href="#">Seguir leyendo</a>
-            </footer>
+        <div id="a3">
+            <article id="a1">
+                <section>
+                    <div>
+                        <a href="">
+                            <h3>Noticia</h3>
+                        </a>
+                    </div>
+                </section>
+            </article>
+            <article id="a2">
+                <section>
+                    <div>
+                        <a href="">
+                            <h3>Noticia</h3>
+                        </a>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div id="a4">
+            <article>
+                <section>
 
-        </article>
-        <article>
-            <section>
-                <h2> wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex cumque eius neque excepturi autem
-                    molestias nostrum dolore corporis, incidunt quia, fugit ipsam consequatur maiores, aspernatur
-                    distinctio omnis in aliquam.</p>
-            </section>
-            <footer>
+                    <h2> qqqqqqqqqqqqqqqqqqqqqqq</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex cumque eius neque excepturi
+                        autem
+                        molestias nostrum dolore corporis, incidunt quia, fugit ipsam consequatur maiores,
+                        aspernatur
+                        distinctio omnis in aliquam.</p>
+                </section>
                 <a href="#">Seguir leyendo</a>
-            </footer>
+            </article>
+            <article>
+                <section>
+                    <h2> wwwwwwwwwwwwwwwwwww</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex cumque eius neque excepturi
+                        autem
+                        molestias nostrum dolore corporis, incidunt quia, fugit ipsam consequatur maiores,
+                        aspernatur
+                        distinctio omnis in aliquam.</p>
+                </section>
+                <a href="#">Seguir leyendo</a>
+            </article>
+        </div>
+        <div id="a5">
+            <article>
+                <section>
+                    <div id="a6">
+                        <h3>Noticia</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto soluta quidem molestias </p>
+                    <a href="#">Seguir leyendo</a>
+                    <br>
+                    <div id="a7">
+                        <h3>Noticia</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto soluta quidem molestias </p>
+                    <a href="#">Seguir leyendo</a>
+                </section>
+            </article>
+        </div>
 
-        </article>
 
 
     </main>
