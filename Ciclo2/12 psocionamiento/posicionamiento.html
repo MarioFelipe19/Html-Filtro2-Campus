@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 2rem;
+            font-size: 2rem;
+            font-family: sans-serif;
+            background-color: black;
+            height: 2000px;
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+        div{
+            border-radius: 5px;
+            background-color: gray;
+        }
+        .static{
+            background-color: white;
+        }
+        .relative{
+            background-color: aqua;
+        }
+        .absolute{
+            background-color: aquamarine;
+        }
+        .fixed{
+            background-color: blue;
+
+        }
+        .sticky{
+            background-color: brown;
+        }
+        /* CC position */
+        .static{
+            position: static;
+
+        }
+        /* tiene mas peso el left que el right */
+        .relative{
+            position: relative;
+            left: 50px;
+             top:  5px;
+             z-index: 3;
+        }
+        .parent{
+            position: relative;
+        }
+        /* busca el primero que tenga relativo */
+        .absolute{
+            position: absolute;
+            top: 10px;
+        }
+        /* mantiene la caja en el mismo lugar */
+        .fixed{
+            position: fixed;
+            top: 10%;
+            right: 20px;
+            
+        }
+        /* este sirve para que sea pegajoso pero solo hasta el final del padre */
+        .sticky{
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS position</h1>
+    <div class="parent">
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+        <div class="static">Static</div>
+
+        
+
+    </div>
+    
+</body>
+</html>
