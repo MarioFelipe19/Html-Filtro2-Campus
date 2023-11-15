@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO FLEXBOX</title>
+    <style>
+        ul li a{
+            text-decoration: none ;
+            color: black;
+        }
+        #u1 {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        
+
+        #u2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            list-style: none;
+            background-color: red;
+
+
+
+        }
+
+        
+
+        #u3 {
+            list-style: none;
+            display: flex;
+        }
+        #u1 li {
+            width: 80px;
+        }
+        #u2 li {
+            width: 80px;
+        }
+        #u3 li {
+            width: 250px;
+        }
+
+        ul li {
+            background-color: rgb(123, 198, 199, 0.8);
+            border: 1px solid white;
+            font-family: sans-serif;
+            width: 10%;
+            padding: 1% 1% 1% 1%;
+            
+        }
+
+        ul+ul+ul li {
+
+            background-color: rgb(123, 198, 199, 0.8);
+            border: 1px solid white;
+            font-family: sans-serif;
+            width: 25%;
+            height: 250px;
+            padding: 1% 1% 1% 1%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul id="u1">
+        <li><a href="a1">Home</a></li>
+        <li><a href="a1">Servicios</a></li>
+        <li><a href="a1">Opciones</a></li>
+        <li><a href="a1">Planes</a></li>
+        <li><a href="a1">Contacto</a></li>
+    </ul>
+
+    <ul id="u2">
+        <li><a href="a1">Home</a></li>
+        <li><a href="a1">Servicios</a></li>
+        <li><a href="a1">Opciones</a></li>
+        <li><a href="a1">Planes</a></li>
+        <li><a href="a1">Contacto</a></li>
+    </ul>
+
+    <ul id="u3">
+        <li><a href="a1"></a></li>
+        <li><a href="a1"></a></li>
+        <li><a href="a1"></a></li>
+    </ul>
+</body>
+
+</html>
