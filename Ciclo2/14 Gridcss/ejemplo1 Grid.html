@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* gap para colocar espacios */
+        .grid-container{
+            background-color: aqua;
+            padding: 10px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            grid-template-rows: auto auto auto;
+            width:  80%;
+            height: 500px;
+            /* column-gap: 20px; */
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+         .grid-item{
+            background-color: gainsboro;
+            border:  1px solid black;
+            padding:  20px;
+            font-size:  30px;
+            text-align: center;
+        }
+        
+        /*.Item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .Item5{
+            grid-column-start: 2;
+            grid-column-end: 4 ;
+        }
+        .Item9{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        } */
+        .Item8{
+            /* grid-area: row-star/ col-star/ row-end/ col-end */
+            grid-area: 1 / 2 / 5 / 6;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .grid-container>.grid-item{Item $}*9 -->
+    <div class="grid-container">
+        <div class="grid-item Item1">Item 1</div>
+        <div class="grid-item Item2">Item 2</div>
+        <div class="grid-item Item3">Item 3</div>
+        <div class="grid-item Item4">Item 4</div>
+        <div class="grid-item Item5">Item 5</div>
+        <div class="grid-item Item6">Item 6</div>
+        <div class="grid-item Item7">Item 7</div>
+        <div class="grid-item Item8">Item 8</div>
+        <div class="grid-item Item9">Item 9</div>
+        <div class="grid-item Item10">Item 10</div>
+        <div class="grid-item Item11">Item 11</div>
+        <div class="grid-item Item12">Item 12</div>
+        <div class="grid-item Item13">Item 13</div>
+        <div class="grid-item Item14">Item 14</div>
+        <div class="grid-item Item15">Item 15</div>
+    </div>
+</body>
+</html>
