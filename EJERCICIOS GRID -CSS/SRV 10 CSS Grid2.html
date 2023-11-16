@@ -1,101 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SRV 10 CSS Grid2</title>
     <style>
-        body{
+        body {
             box-sizing: border-box;
             display: flex;
             height: 1000px;
-           
-            
+
+
         }
-        .container{
+
+        .container {
             flex-basis: 500px;
             height: 50%;
-            width: 10px;
+            width: 300%;
             margin: auto;
-            padding: 5% 5% 5% 5% ;
+            padding: 5% 5% 5% 5%;
             display: grid;
             gap: 15px;
             background-color: rgb(236, 227, 227);
             grid-template-areas: "uno uno dos tres"
-                                  "uno uno cuatro cinco"
-                                  "seis siete ocho nueve";
+                "uno uno cuatro cinco"
+                "seis siete ocho nueve";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
         }
-        .items {
-            
-        }
-        .item1{
+
+       
+        .item1 {
             grid-area: uno;
             background-color: rgb(36, 35, 35);
             border-radius: 10px;
             color: white;
-            
-            
+            padding: 0% 5% 0% 5%;
         }
-        .item2{
+
+        .item1 p {
+            font-size: 1.5vh;
+        }
+
+        .item2 {
             grid-area: dos;
             background-color: rgb(255, 153, 0);
             border-radius: 100px;
-            
+
         }
-        .item3{
+
+        .item3 {
             grid-area: tres;
             background-color: rgb(184, 177, 177);
             border-radius: 100px;
-            
+
         }
-        .item4{
+
+        .item4 {
             grid-area: cuatro;
             background-color: rgb(36, 35, 35);
             border-radius: 100px;
         }
-        .item5{
+
+        .item5 {
             grid-area: cinco;
             background-color: rgb(184, 177, 177);
             border-radius: 100px;
         }
-        .item6{
+
+        .item6 {
             grid-area: seis;
             background-color: rgb(255, 153, 0);
             border-radius: 100px;
         }
-        .item7{
+
+        .item7 {
             grid-area: siete;
             background-color: rgb(36, 35, 35);
             border-radius: 100px;
         }
-        .item8{
+
+        .item8 {
             grid-area: ocho;
             background-color: rgb(184, 177, 177);
             border-radius: 100px;
         }
-        .item9{
+
+        .item9 {
             grid-area: nueve;
             background-color: rgb(36, 35, 35);
             border-radius: 100px;
         }
-        .icono{
+
+        .icono {
             width: 100px;
-            margin: 20px 20px 20px 20px ;
+            margin: 20px 20px 20px 20px;
+        }
+
+        .item7 img {
+            visibility: hidden;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="items item1"><h1>Grid <br>Layout IV<h1>
+        <div class="items item1">
+            <h1>Grid <br>Layout IV<h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident nisi
+                        dignissimos repudiandae dolorum fuga totam inventore, sint ratione ducimus temporibus deleniti
+                        autem voluptate veniam vitae, eum aperiam voluptatum a!</p>
         </div>
         <div class="items item2"></div>
         <div class="items item3"> <img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-megaphone.png" alt=""></div>
-        <div class="items item4"> <img class="icono"  src="../EJERCICIOS GRID -CSS/Img/icon-bicycle.png" alt=""></div>
+        <div class="items item4"> <img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-bicycle.png" alt=""></div>
         <div class="items item5"><img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-bug.png" alt=""></div>
         <div class="items item6"><img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-fast-food.png" alt=""></div>
-        <div class="items item7"></div>
-        <div class="items item8"><img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-game-controller.png" alt=""></div>
+        <div class="items item7"><img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-fast-food.png" alt=""></div>
+        <div class="items item8"><img class="icono" src="../EJERCICIOS GRID -CSS/Img/icon-game-controller.png" alt="">
+        </div>
         <div class="items item9"></div>
     </div>
 </body>
+
 </html>
