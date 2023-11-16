@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRV 10 CSS Grid</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            height: 1000px;
+           
+            
+        }
+        .container{
+            flex-basis: 500px;
+            height: 50%;
+            width: 10px;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+            background-color: white;
+            grid-template-areas: "uno dos dos" 
+                                 "tres dos dos"
+                                 "tres cuatro cinco"
+                                 "tres seis siete"
+                                 "ocho ocho ocho"
+                                 ; 
+        }
+        .items {
+            background-color: aqua;
+        }
+        .item1{
+            grid-area: uno;
+            
+        }
+        .item2{
+            grid-area: dos;
+        }
+        .item3{
+            grid-area: tres;
+        }
+        .item4{
+            grid-area: cuatro;
+        }
+        .item5{
+            grid-area: cinco;
+        }
+        .item6{
+            grid-area: seis;
+        }
+        .item7{
+            grid-area: siete;
+        }
+        .item8{
+            grid-area: ocho;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">Item 1</div>
+        <div class="items item2">Item 2</div>
+        <div class="items item3">Item 3</div>
+        <div class="items item4">Item 4</div>
+        <div class="items item5">Item 5</div>
+        <div class="items item6">Item 6</div>
+        <div class="items item7">Item 7</div>
+        <div class="items item8">Item 8</div>
+    </div>
+    
+</body>
+</html>
