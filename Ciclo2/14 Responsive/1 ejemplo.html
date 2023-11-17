@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprediendo dieseño responsivo</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        img{
+            width: 40%;
+            margin: 0 auto;
+        }
+        /* esto sirve para colocar las meidas cuando sea en movil */
+        @media screen and (max-width:480px) {
+            body{
+                background-color: tomato;
+            }
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+        /* esto sirve para pantalla grande */
+        @media (max-width:780px){
+            body{
+                background-color: lightpink;
+            }
+            h1{
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprediendo dieseño responsivo</h1>
+    <br><br>
+    <img src="../14 Gridcss/" alt="">
+</body>
+</html>
