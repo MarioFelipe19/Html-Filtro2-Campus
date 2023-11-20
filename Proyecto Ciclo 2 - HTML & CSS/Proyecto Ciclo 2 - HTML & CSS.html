@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: rgb(235, 53, 53);
+            padding: 10px;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(235, 53, 53);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #2980b9;
+        }
+
+        nav a:hover {
+            background-color: #1f618d;
+        }
+
+        .logo {
+            text-align: left;
+            margin: 20px;
+            
+        }
+
+        .logo img {
+            width: 150px; 
+            height: auto;
+            border-radius: 50%; 
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f618d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Historia de las Peliculas</h1>
+        <div class="logo">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/LogoPagina" alt="Logo">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Pelicualas</a>
+        <a href="#">Series</a>
+        <a href="#">Series Aimadas</a>
+    </nav>
+
+   
+
+    <footer>
+        <form>
+            <h2>Formulario de Sugerencias</h2>
+            <label for="sugerencia">Sugerencia:</label>
+            <textarea id="sugerencia" name="sugerencia" rows="4" required></textarea>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </footer>
+</body>
+</html>
