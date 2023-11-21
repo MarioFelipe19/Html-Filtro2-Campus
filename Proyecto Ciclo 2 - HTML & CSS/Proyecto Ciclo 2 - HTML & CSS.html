@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +18,49 @@
             display: flex;
             background-color: rgb(235, 53, 53);
             padding: 10px;
-            text-align: center;
             font-family: 'Pacifico', cursive;
             font-size: 25px;
         }
+        .logo {
+            text-align: left;
+            margin: 20px;
+        }
 
+        .logo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        /* Menu de la pagina  */
         nav {
             display: flex;
             justify-content: space-around;
             background-color: rgb(235, 53, 53);
-            padding: 10px;
+            padding: 3px;
+            margin: 1px;
             border-radius: 10px;
+        }
+        /* caja de busqueda */
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
             
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-icon {
+            margin-left: 8px;
+            cursor: pointer;
         }
 
         nav a {
             text-decoration: none;
             color: #ffffff;
-            padding: 8px 15px;
+            padding: 13px 15px;
             border-radius: 5px;
             background-color: #2980b9;
         }
@@ -43,24 +69,13 @@
             background-color: #1f618d;
         }
 
-        .logo {
-            text-align: left;
-            margin: 20px;
-            
-        }
-
-        .logo img {
-            width: 150px; 
-            height: auto;
-            border-radius: 50%; 
-        }
-
+        /* formulario de sugerencias  */
         footer {
             background-color: #3498db;
             color: #ffffff;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: static;
             bottom: 0;
             width: 100%;
         }
@@ -97,8 +112,25 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
+
+        /* Carrusel de imágenes */
+        .slider-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .slider-container img {
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -110,10 +142,31 @@
     <nav>
         <a href="#">Pelicualas</a>
         <a href="#">Series</a>
-        <a href="#">Series Aimadas</a>
+        <a href="#">Series Animadas</a>
+        <div class="search-box">
+            <!-- <span class="search-icon">&#128269;</span> -->
+            <input type="text" class="search-input" placeholder="Buscar">
+        </div>
     </nav>
 
-   
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <div class="slider-container">
+        <img
+          class="slider-item"
+          src="../Proyecto Ciclo 2 - HTML & CSS/img/topgun.jpg"
+        />
+        <img
+          class="slider-item"
+          src="..//Proyecto Ciclo 2 - HTML & CSS/img/alien_1366_2000.jpg"
+        />
+        <img
+          class="slider-item"
+          src="../Proyecto Ciclo 2 - HTML & CSS/img/terminator.jpg"
+        />
+      </div>
+    <!-- Fin del carrusel -->
 
     <footer>
         <form>
@@ -131,4 +184,5 @@
         </form>
     </footer>
 </body>
+
 </html>
