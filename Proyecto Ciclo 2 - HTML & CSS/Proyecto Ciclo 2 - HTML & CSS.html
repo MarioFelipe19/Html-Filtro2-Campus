@@ -69,6 +69,22 @@
             background-color: #1f618d;
         }
 
+        /* Carrusel de imágenes */
+        .slider-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        .slider-container img {
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+        }
+
         /* formulario de sugerencias  */
         footer {
             background-color: #3498db;
@@ -112,22 +128,6 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
-
-        /* Carrusel de imágenes */
-        .slider-container {
-            display: flex;
-            width: 100%;
-            height: 100vh;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-        }
-
-        .slider-container img {
-            flex: 0 0 100%;
-            width: 100%;
-            object-fit: cover;
-            scroll-snap-align: center;
-        }
     </style>
 </head>
 
@@ -140,9 +140,9 @@
     </header>
 
     <nav>
-        <a href="#">Pelicualas</a>
-        <a href="#">Series</a>
-        <a href="#">Series Animadas</a>
+        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
+        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
+        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series Animadas</a>
         <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
             <input type="text" class="search-input" placeholder="Buscar">
