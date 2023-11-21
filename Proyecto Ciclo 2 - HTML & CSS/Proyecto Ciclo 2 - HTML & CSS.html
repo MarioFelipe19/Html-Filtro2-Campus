@@ -7,6 +7,7 @@
     <title>Página de Inicio</title>
     <style>
         body {
+            
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -40,6 +41,7 @@
             margin: 1px;
             border-radius: 10px;
         }
+        
         /* caja de busqueda */
         .search-box {
             display: flex;
@@ -128,6 +130,76 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
+          /* Iconos en el footer */
+          .footer-icons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%; /* Ajusta el ancho según sea necesario */
+            margin: 0 auto; /* Centra los iconos */
+        }
+
+        .footer-icons  {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .footer-icons img{
+            width: 5%;
+        }
+        /* Media Queries para hacer responsive */
+        @media (max-width:480px){
+            nav{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(5, auto);
+                gap: 2%;
+                text-align: center;
+            }
+            #a1{
+                grid-column: 1/ span 2;
+                grid-row: 1/ span 1;
+            }
+            #a2{
+                grid-column: 1/ span 2;
+            }
+            #a3{
+                grid-column: 1/ span 2;
+            }
+            #a4{
+                grid-column: 1/ span 2;
+            }
+            .search-box {
+            display: grid;
+            align-items: center;
+            grid-column: 1/ span 2 ;
+            }
+        }
+        @media (min-width:480px) and (max-width:768px) {
+
+            nav{
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(5, auto);
+                gap: 3%;
+            }
+            #a1{
+                grid-column: 1/ 2 ;
+            }
+            #a2{
+                grid-column: 2/ span 3 ;
+            }
+            #a3{
+                grid-column: 1/ 2 ;
+            }
+            #a4{
+                grid-column: 2/ span 3 ;
+            }
+            .search-box {
+            display: grid;
+            align-items: center;
+            grid-column: 1/ 2 ;
+        }
+        }
+        
     </style>
 </head>
 
@@ -140,13 +212,13 @@
     </header>
 
     <nav>
-        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
-        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
-        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
-        <a href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series Animadas</a>
+        <a id="a1" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
+        <a id="a2" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
+        <a id="a3" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
+        <a id="a4" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series Animadas</a>
         <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
-            <input type="text" class="search-input" placeholder="Buscar">
+            <input id="a5" type="text" class="search-input" placeholder="Buscar">
         </div>
     </nav>
 
@@ -183,6 +255,13 @@
 
             <input type="submit" value="Enviar">
         </form>
+        <!-- Iconos en el footer -->
+        <div class="footer-icons">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/facebook.png" alt="Logo">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/youtube.png" alt="Logo">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/logotipo-de-instagram.png" alt="Logo">
+            
+        </div>
     </footer>
 </body>
 
