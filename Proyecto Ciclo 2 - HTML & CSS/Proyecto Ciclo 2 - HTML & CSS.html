@@ -20,7 +20,7 @@
             background-color: rgb(235, 53, 53);
             padding: 10px;
             font-family: 'Pacifico', cursive;
-            font-size: 25px;
+            font-size: 35px;
         }
         .logo {
             text-align: left;
@@ -78,6 +78,7 @@
             height: 100vh;
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
+            height: auto;
         }
 
         .slider-container img {
@@ -85,6 +86,7 @@
             width: 100%;
             object-fit: cover;
             scroll-snap-align: center;
+            
         }
 
         /* formulario de sugerencias  */
@@ -128,6 +130,18 @@
         }
 
         input[type="submit"]:hover {
+            background-color: #1f618d;
+        }
+        input[type="Reset"] {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="Reset"]:hover {
             background-color: #1f618d;
         }
           /* Iconos en el footer */
@@ -219,6 +233,7 @@
         <a id="a4" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series Animadas</a>
         <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
+            
             <input id="a5" type="text" class="search-input" placeholder="Buscar">
         </div>
     </nav>
@@ -253,6 +268,8 @@
             <input type="text" id="email" name="email" required>
 
             <input type="submit" value="Enviar">
+            
+            <input type="Reset" value="Limpiar">
         </form>
         <!-- Iconos en el footer -->
         <div class="footer-icons">

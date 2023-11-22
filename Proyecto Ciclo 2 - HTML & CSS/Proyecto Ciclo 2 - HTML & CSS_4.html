@@ -7,7 +7,7 @@
     <title>Página de Series Animadas</title>
     <style>
         body {
-            
+
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -20,8 +20,9 @@
             background-color: rgb(235, 53, 53);
             padding: 10px;
             font-family: 'Pacifico', cursive;
-            font-size: 25px;
+            font-size: 35px;
         }
+
         .logo {
             text-align: left;
             margin: 20px;
@@ -32,6 +33,7 @@
             height: auto;
             border-radius: 50%;
         }
+
         /* Menu de la pagina  */
         nav {
             display: flex;
@@ -41,15 +43,16 @@
             margin: 1px;
             border-radius: 10px;
         }
-        
+
         /* caja de busqueda */
         .search-box {
             display: flex;
             align-items: center;
+
         }
 
         .search-input {
-            
+
             border: 1px solid #ccc;
             border-radius: 4px;
         }
@@ -71,21 +74,46 @@
             background-color: #1f618d;
         }
 
-        /* Carrusel de imágenes */
-        .slider-container {
-            display: flex;
-            width: 100%;
-            height: 100vh;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
+        /* Contenido  de la Pagina*/
+        .title {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .slider-container img {
-            flex: 0 0 100%;
-            width: 100%;
-            object-fit: cover;
-            scroll-snap-align: center;
+        .title h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            font-weight: bold;
         }
+
+        .main-content {
+            margin: 0 auto;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 30%;
+            height: auto;
+        }
+
+        .text-container {
+            text-align: justify;
+        }
+
+        .video-container {
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 50%;
+            height: auto;
+        }
+
 
         /* formulario de sugerencias  */
         footer {
@@ -130,75 +158,103 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
-          /* Iconos en el footer */
-          .footer-icons {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%; /* Ajusta el ancho según sea necesario */
-            margin: 0 auto; /* Centra los iconos */
+        input[type="Reset"] {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        .footer-icons  {
+        input[type="Reset"]:hover {
+            background-color: #1f618d;
+        }
+
+        /* Iconos en el footer */
+        .footer-icons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            /* Ajusta el ancho según sea necesario */
+            margin: 0 auto;
+            /* Centra los iconos */
+        }
+
+        .footer-icons {
             font-size: 24px;
             cursor: pointer;
         }
-        .footer-icons img{
+
+        .footer-icons img {
             width: 5%;
         }
+
         /* Media Queries para hacer responsive */
-        @media (max-width:480px){
-            nav{
+        @media (max-width:480px) {
+            nav {
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-rows: repeat(5, auto);
                 gap: 2%;
                 text-align: center;
             }
-            #a1{
+
+            #a1 {
                 grid-column: 1/ span 2;
                 grid-row: 1/ span 1;
             }
-            #a2{
+
+            #a2 {
                 grid-column: 1/ span 2;
             }
-            #a3{
+
+            #a3 {
                 grid-column: 1/ span 2;
             }
-            #a4{
+
+            #a4 {
                 grid-column: 1/ span 2;
             }
+
             .search-box {
-            display: grid;
-            align-items: center;
-            grid-column: 1/ span 2 ;
+                display: grid;
+                align-items: center;
+                grid-column: 1/ span 2;
             }
         }
+
         @media (min-width:480px) and (max-width:768px) {
 
-            nav{
+            nav {
                 display: grid;
                 grid-template-columns: repeat(5, auto);
                 grid-template-rows: repeat(5, auto);
                 gap: 3%;
                 text-align: center;
             }
-            #a1{
-                grid-column: 1/ 2 ;
+
+            #a1 {
+                grid-column: 1/ 2;
             }
-            #a2{
-                grid-column: 2/ span 3 ;
+
+            #a2 {
+                grid-column: 2/ span 3;
             }
-            #a3{
-                grid-column: 1/ 2 ;
+
+            #a3 {
+                grid-column: 1/ 2;
             }
-            #a4{
-                grid-column: 2/ span 3 ;
+
+            #a4 {
+                grid-column: 2/ span 3;
             }
+
             .search-box {
-            display: grid;
-            align-items: center;
-            grid-column: 1/ 2 ;
-        }
+                display: grid;
+                align-items: center;
+                grid-column: 1/ 2;
+            }
         }
     </style>
 </head>
@@ -212,15 +268,43 @@
     </header>
 
     <nav>
-        <a id="a1" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
-        <a id="a2" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
-        <a id="a3" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
-        <a id="a4" href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series Animadas</a>
+        <a id="a1"
+            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
+        <a id="a2"
+            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
+        <a id="a3"
+            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
+        <a id="a4"
+            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series
+            Animadas</a>
         <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
             <input id="a5" type="text" class="search-input" placeholder="Buscar">
         </div>
     </nav>
+    <!-- Contenido de la pagina  -->
+    <a name="Menu"></a>
+    <div class="title">
+        <h1>G.I. Joe: A Real American Hero</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/GIJOE.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>G.I. Joe: A Real American Hero (también conocida como Action Force en el Reino Unido) es una serie animada de televisión estadounidense creada por Ron Friedman,1​ basada en la línea de figuras de acción de Hasbro y en el cómic G.I. Joe: A Real American Hero publicado por Marvel. Fue emitida por redifusión entre 1985 y 1986,2​ se produjeron un total de 95 episodios.</p>
+            
+            <h2>Historia</h2>
+            <p>Cuando Hasbro lanzó al mercado la línea de figuras de acción G.I. Joe: A Real American Hero en 1982 junto al cómic publicado por Marvel, comisionaron a Sunbow Productions para producir una serie de comerciales animados de 30 segundos para promocionar tanto las historietas como los juguetes. La popularidad de los comerciales llevó a la realización de una miniserie El arma Mass que se emitió por primera vez en 1983.</p>
+            <p>La trama se centra en el dispositivo M.A.S.S., un potente teletransportador de materia, y el enfrentamiento entre el comando G.I. Joe y la organización terrorista Cobra por hacerse con el dispositivo. Una segunda parte de la miniserie se estrenó en 1984, llamada La venganza de Cobra. Ambas producciones fueron escritas por Ron Friedman. Luego de la popularidad de las miniseries, en 1985 se estrena otra titulada La pirámide de la oscuridad antesala de la primera temporada regular de G.I. Joe: A Real American Hero compuesta por 55 episodios, seguida de una segunda de 30 al año siguiente, que comienza de nuevo con otros cinco capítulos enlazados, bajo el título Elévate, serpiente, elévate. Para terminar esta etapa, salió en el mercado del video doméstico una película animada G.I. Joe: La película (1987), que en realidad iba a ser otra miniserie de inicio para una tercera temporada, que nunca llegó a realizarse. La historia se volvería a retomar en 1989, ya con otra productora, DIC Entertainment; miniserie y otras dos temporadas hasta 1992, fecha en la que termina la generación clásica de la franquicia.</p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/GI Joe 1080p HD Bluray Intro.mp4" controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
 
     <footer>
         <form>
@@ -235,13 +319,15 @@
             <input type="text" id="email" name="email" required>
 
             <input type="submit" value="Enviar">
+            
+            <input type="Reset" value="Limpiar">
         </form>
         <!-- Iconos en el footer -->
         <div class="footer-icons">
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/facebook.png" alt="Logo">
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/youtube.png" alt="Logo">
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/logotipo-de-instagram.png" alt="Logo">
-            
+
         </div>
     </footer>
 </body>
