@@ -20,7 +20,7 @@
             background-color: rgb(235, 53, 53);
             padding: 10px;
             font-family: 'Pacifico', cursive;
-            font-size: 35px;
+            font-size: 30px;
         }
 
         .logo {
@@ -48,14 +48,14 @@
         .search-box {
             display: flex;
             align-items: center;
-            
+
         }
 
-        .search-input {
+        /* .search-input {
 
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
+        } */
 
         .search-icon {
             margin-left: 8px;
@@ -65,7 +65,7 @@
         nav a {
             text-decoration: none;
             color: #ffffff;
-            padding: 13px 15px;
+            padding: 20px 15px;
             border-radius: 5px;
             background-color: #2980b9;
         }
@@ -158,6 +158,7 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
+
         input[type="Reset"] {
             background-color: #2980b9;
             color: #ffffff;
@@ -170,6 +171,7 @@
         input[type="Reset"]:hover {
             background-color: #1f618d;
         }
+
         /* Iconos en el footer */
         .footer-icons {
             display: flex;
@@ -220,6 +222,7 @@
                 display: grid;
                 align-items: center;
                 grid-column: 1/ span 2;
+                margin: auto;
             }
         }
 
@@ -268,18 +271,21 @@
 
     <nav>
         <a id="a1"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
+            href="Proyecto Ciclo 2 - HTML & CSS.html">Inicio</a>
         <a id="a2"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Peliculas</a>
+            href="Proyecto Ciclo 2 - HTML & CSS_2.html">Peliculas</a>
         <a id="a3"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
+            href="Proyecto Ciclo 2 - HTML & CSS_3.html">Series</a>
         <a id="a4"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series
+            href="Proyecto Ciclo 2 - HTML & CSS_4.html">Series
             Animadas</a>
-        
-        <div class="search-box" >  
+
+        <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
-            <input id="a5" type="text" class="search-input" placeholder="Buscar">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="search" class="search-input" name="q" placeholder="Buscar" required>
+                <!-- <button type="submit" class="search-button">Buscar</button> -->
+            </form>
         </div>
     </nav>
     <!-- Contenido de la pagina  -->
@@ -293,11 +299,24 @@
         </div>
         <br>
         <div class="text-container">
-            <p>Top Gun (conocida como Top Gun: Pasión y gloria en Hispanoamérica, Top Gun: Reto a la gloria en Chile y Top Gun: Ídolos del aire en España) es una película americana de acción, drama y romance de 1986, dirigida por Tony Scott y protagonizada por Tom Cruise y Kelly McGillis. La trama sigue a Pete "Maverick" Mitchell, un joven aviador naval a bordo del portaaviones USS Enterprise. Él y su Oficial de Intercepción de Radar, el teniente Nick "Goose" Bradshaw tienen la oportunidad de entrenar en la Escuela de Armas de Combate de la Marina de los EE. UU. en la Estación Aérea Naval de Miramar en San Diego, California.</p>
-            
+            <p>Top Gun (conocida como Top Gun: Pasión y gloria en Hispanoamérica, Top Gun: Reto a la gloria en Chile y
+                Top Gun: Ídolos del aire en España) es una película americana de acción, drama y romance de 1986,
+                dirigida por Tony Scott y protagonizada por Tom Cruise y Kelly McGillis. La trama sigue a Pete
+                "Maverick" Mitchell, un joven aviador naval a bordo del portaaviones USS Enterprise. Él y su Oficial de
+                Intercepción de Radar, el teniente Nick "Goose" Bradshaw tienen la oportunidad de entrenar en la Escuela
+                de Armas de Combate de la Marina de los EE. UU. en la Estación Aérea Naval de Miramar en San Diego,
+                California.</p>
+
             <h2>Historia</h2>
-            <p>El texto de apertura menciona cómo en 1969, la Marina de los EE. UU. estableció una escuela para pilotos de combate. Se la conoce oficialmente como Escuela de Armas de Combate, pero los reclutas la llaman "Top Gun". Vemos varios reclutas y hombres de la Marina en los barcos donde los pilotos despegan o regresan. </p>
-            <p>El teniente Pete Mitchell, conocido como «Maverick» (Tom Cruise), es un talentoso y rebelde aviador de Grumman F-14 Tomcat de la Armada de los Estados Unidos. Maverick es el hijo de un piloto que participó en la guerra de Vietnam, que fue derribado en circunstancias misteriosas y fue dado por desaparecido en combate debido a errores cometidos por él mismo, por lo que Maverick está luchando todo el tiempo por librarse de la mala fama que cayó sobre su nombre por los supuestos fallos de su padre. </p>
+            <p>El texto de apertura menciona cómo en 1969, la Marina de los EE. UU. estableció una escuela para pilotos
+                de combate. Se la conoce oficialmente como Escuela de Armas de Combate, pero los reclutas la llaman "Top
+                Gun". Vemos varios reclutas y hombres de la Marina en los barcos donde los pilotos despegan o regresan.
+            </p>
+            <p>El teniente Pete Mitchell, conocido como «Maverick» (Tom Cruise), es un talentoso y rebelde aviador de
+                Grumman F-14 Tomcat de la Armada de los Estados Unidos. Maverick es el hijo de un piloto que participó
+                en la guerra de Vietnam, que fue derribado en circunstancias misteriosas y fue dado por desaparecido en
+                combate debido a errores cometidos por él mismo, por lo que Maverick está luchando todo el tiempo por
+                librarse de la mala fama que cayó sobre su nombre por los supuestos fallos de su padre. </p>
         </div>
         <br>
         <div class="video-container">
@@ -305,7 +324,158 @@
         </div>
         <h3><a href="">[Volver al menu]</a></h3>
     </section>
-     <!-- Formulario en el footer -->
+    <br>
+    <div class="title">
+        <h1>Depredador</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/depredador.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>Depredador es una película estadounidense de acción y ciencia ficción militar de 1987, dirigida por John
+                McTiernan, escrita por Jim Thomas y John Thomas. Es la primera entrega de la franquicia. Protagonizada
+                por Arnold Schwarzenegger, Carl Weathers, Jesse Ventura, Kevin Peter Hall, Elpidia Carrillo, Bill Duke,
+                Shane Black, Richard Chaves y Sonny Landham en los papeles principales. La película narra la historia de
+                una fuerza de élite que emprende una misión para rescatar un rehén de una guerrilla ubicada en América
+                Central. Mientras realizan la misión serán a su vez acechados por un cazador extraterrestre
+                tecnológicamente avanzado. </p>
+
+            <h2>Historia</h2>
+            <p>La película comienza mostrando una nave espacial acercándose a la Tierra. A continuación la acción se
+                traslada a las costas de Centroamérica donde un grupo de fuerzas especiales estadounidense comandado por
+                el Delta Force y veterano de la Guerra de Vietnam Mayor Alan "Dutch" Schaeffer (Arnold Schwarzenegger)
+                es enviado a rescatar a un ministro del gabinete presidencial secuestrado por un grupo guerrillero.
+                Dutch junto con un antiguo compañero de las Fuerzas Especiales del Ejército de Estados Unidos,
+                actualmente perteneciente a la División de Actividades Especiales de la CIA, llamado George Dillon (Carl
+                Weathers) y el resto de los cinco componentes del equipo, son transportados en helicóptero a la jungla.
+            </p>
+            <p>Al llegar, descubren los restos de un helicóptero accidentado en la zona y poco después encuentran los
+                cuerpos de unos soldados de las fuerzas especiales estadounidenses despellejados, la presencia de un
+                grupo como ese en la zona desconcierta a Dutch. Tiempo después dan con un campamento fuertemente
+                defendido con presencia de militares soviéticos. Acaban con todo el campamento excepto con una
+                guerrillera llamada Anna (Elpidia Carrillo) que es capturada. Dutch descubre que la misión de rescate no
+                era tal, si no que habían sido enviados a destruir el campamento rebelde. Dillon reconoce que los
+                cuerpos que habían encontrado antes eran agentes desaparecidos de la CIA. </p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Depredador (1987) - Trailer en español HD.mp4"
+                controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <br>
+    <div class="title">
+        <h1>RoboCop</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Robocop.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>RoboCop es una película de acción y ciencia ficción estadounidense dirigida por Paul Verhoeven y escrita
+                por Edward Neumeier y Michael Miner. Está protagonizada por Peter Weller, Nancy Allen, Dan O'Herlihy,
+                Ronny Cox, Kurtwood Smith y Miguel Ferrer. La trama se centra en el oficial de policía Alex Murphy
+                (Weller), quien es asesinado por una banda de criminales y posteriormente revivido por la corporación
+                Omni Consumer Products como un cíborg policía llamado RoboCop.1​ Está ambientada en Detroit (Míchigan),
+                un lugar plagado de crímenes en el que sin darse cuenta de su vida anterior, RoboCop ejecuta una campaña
+                para frenarlos mientras acepta los fragmentos persistentes de su humanidad.</p>
+
+            <h2>Historia</h2>
+            <p>En un futuro cercano distópico, Detroit está al borde del colapso social y financiero. Abrumada por el
+                crimen y la disminución de los recursos, la ciudad otorga a la corporación Omni Consumer Products (OCP)
+                el control de la fuerza policial de Detroit. El vicepresidente de la OCP, Dick Jones, demuestra el
+                ED-209, un robot de aplicación de la ley diseñado para suplantar a la policía. El ED-209 funciona mal y
+                mata a un ejecutivo, lo que permite al ambicioso Bob Morton presentar al presidente de la compañía («El
+                viejo») su propio proyecto: RoboCop. Mientras tanto, el oficial Alex Murphy es trasladado al recinto de
+                Metro West, donde junto con su nueva compañera Anne Lewis, persigue a un peligroso criminal llamado
+                Clarence Boddicker y a su banda. El recién llegado cae en una emboscada y es torturado por el grupo de
+                malhechores hasta que Boddicker lo asesina de un disparo en la cabeza. Morton convierte el cadáver de
+                Murphy en RoboCop, un cíborg poderoso y fuertemente blindado sin recuerdos de su vida anterior; está
+                programado con tres directivas principales: servir a la confianza del público, proteger a los inocentes
+                y defender la ley; la cuarta está clasificada.
+            </p>
+            <p>Es asignado a Metro West y aclamado por los medios de comunicación por su campaña eficiente contra el
+                crimen, pero Lewis empieza a sospechar que él es Murphy por la forma única en que enfunda su arma, un
+                truco que este aprendió para su hijo. Durante el mantenimiento, RoboCop experimenta la pesadilla de la
+                muerte de Murphy, deja la estación y se encuentra con Lewis, quien se dirige a él como Murphy. Mientras
+                patrulla, arresta a Emil; reconoce los gestos de Murphy, fomentando el recuerdo de RoboCop. Regresa con
+                Emil a Metro West y usa la base de datos de la policía para identificar a sus asociados y el registro de
+                Murphy. RoboCop recuerda más sucesos cuando explora la antigua casa de Murphy; su familia se mudó. Al
+                mismo tiempo, Boddicker asesina a Morton a instancias de Jones por intentar usurpar su posición. El
+                protagonista rastrea a la pandilla de Boddicker restante y ocurre un tiroteo: ataca brutalmente al
+                líder, quien confiesa estar empleado por Jones. RoboCop intenta matar al malo, pero su programación le
+                indica que respete la ley. Intenta arrestar a Jones en la OCP Tower y se activa la cuarta directiva, un
+                mecanismo de seguridad para neutralizarlo cuando actúa contra un ejecutivo de la compañía. Jones admite
+                su culpabilidad en la muerte de Morton y lanza al ED-209 para destruir a RoboCop; aunque este escapa, es
+                asaltado por la fuerza policial por orden de la OCP y resulta gravemente dañado. Lewis le ayuda a llegar
+                a una acería abandonada. </p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Robocop (1987) - Trailer en español HD.mp4"
+                controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <br>
+    <div class="title">
+        <h1>Heavy Metal</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/HeavyMetal.jpeg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>Heavy Metal (en Hispanoamérica, Universo en Fantasía) es una película canado-estadounidense de animación
+                para adultos de 1981 dirigida por Gerald Potterton y producida por Len Mogel e Ivan Reitman, quien
+                también fue el editor de la revista Heavy Metal, que fue la base de la película. Se contó con las voces
+                de Rodger Bumpass, John Candy, Joe Flaherty, Eugene Levy, Alice Play, Harold Ramis, Percy Rodriguez,
+                Richard Romanus y John Vernon. El guion fue escrito por Daniel Goldberg y Len Blum. </p>
+
+            <h2>Historia</h2>
+            <p>ELa película mantiene una estructura antológica, al estar compuesta de diversas historias unidas por un
+                nexo común: La pervivencia del mal encarnado en la forma de una esfera consciente de energía verde
+                cristalizada llamada Loc Nar y su extensión por el universo.
+            </p>
+            <p>Aterrizaje suave
+
+                Un transbordador orbita la Tierra y desciende en medio de los campos norteamericanos. Mientras vuela,
+                libera desde la sección de carga un Corvette, que es conducido a través de la carretera por un
+                astronauta hasta su hogar donde se estaciona y baja portando un maletín con algo obtenido en el espacio.
+            </p>
+            <p>Grimaldi
+
+                Grimaldi, el astronauta de la sección anterior, entra en su casa donde lo espera su hija. El hombre abre
+                el maletín y le muestra que en su interior hay una esfera cristalina de color verde, la cual casi de
+                inmediato se activa y desintegra al hombre. Posteriormente acorrala a la niña y se presenta como una
+                imparable fuerza que es "la suma de todos los males" que corrompe y destruye todo a lo largo del tiempo
+                y la historia; para probar que esto es verdad, le permitirá a la niña vivir por esa noche mientras le
+                narra historias de los lugares que ha visitado y las tragedias que ha ocasionado.</p>
+            <p>Harry Canyon
+
+                En una Nueva York futurista, Harry es un taxista cínico y rudo que enfrenta a los ladrones que traten de
+                asaltarlo desintegrándolos con un arma escondida instalada en el asiento del pasajero. Un día rescata a
+                una muchacha que huye de un mafioso llamado Rudnick que asesinó a su padre, un arqueólogo, ya que
+                descubrió una antigua esfera llamada Loc-Nar y ahora persigue a su hija para descubrir dónde esta el
+                artefacto. Al día siguiente, tras dormir con la muchacha, Harry es interceptado por Rudnick, quien exige
+                le entregue la esfera, por lo que tras hablar con la chica deciden venderla al mafioso y repartir el
+                dinero. Acabada la transacción la esfera desintegra al mafioso a la vez que la muchacha traiciona a
+                Harry e intenta asesinarlo para quedarse con todo el dinero; el taxista, sin perder la calma, la asesina
+                con el desintegrador de su taxi, se queda con el dinero y continúa su día.</p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Heavy Metal (1981) - Trailer HD 1080p.mp4"
+                controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <!-- Formulario en el footer -->
     <footer>
         <form>
             <h2>Formulario de Sugerencias</h2>
@@ -322,6 +492,7 @@
 
             <input type="Reset" value="Limpiar">
         </form>
+        <br>
         <!-- Iconos en el footer -->
         <div class="footer-icons">
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/facebook.png" alt="Logo">
@@ -329,6 +500,9 @@
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/logotipo-de-instagram.png" alt="Logo">
 
         </div>
+        <br>
+        <!-- Agregar el texto de copyright -->
+        <p class="copyright">Copyright © 2023 MOVIES. All rights reserved.</p>
     </footer>
 </body>
 

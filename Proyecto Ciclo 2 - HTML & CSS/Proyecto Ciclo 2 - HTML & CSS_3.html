@@ -20,7 +20,7 @@
             background-color: rgb(235, 53, 53);
             padding: 10px;
             font-family: 'Pacifico', cursive;
-            font-size: 35px;
+            font-size: 30px;
         }
 
         .logo {
@@ -51,11 +51,11 @@
 
         }
 
-        .search-input {
+        /* .search-input {
 
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
+        } */
 
         .search-icon {
             margin-left: 8px;
@@ -65,7 +65,7 @@
         nav a {
             text-decoration: none;
             color: #ffffff;
-            padding: 13px 15px;
+            padding: 20px 15px;
             border-radius: 5px;
             background-color: #2980b9;
         }
@@ -158,6 +158,7 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
+
         input[type="Reset"] {
             background-color: #2980b9;
             color: #ffffff;
@@ -170,6 +171,7 @@
         input[type="Reset"]:hover {
             background-color: #1f618d;
         }
+
         /* Iconos en el footer */
         .footer-icons {
             display: flex;
@@ -220,6 +222,7 @@
                 display: grid;
                 align-items: center;
                 grid-column: 1/ span 2;
+                margin: auto;
             }
         }
 
@@ -255,6 +258,11 @@
                 grid-column: 1/ 2;
             }
         }
+
+        /* Agregar el texto de copyright */
+        .copyright {
+            margin-top: 10px;
+        }
     </style>
     </style>
 </head>
@@ -271,22 +279,63 @@
 
         <nav>
             <a id="a1"
-                href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
-            <a id="a2"
-                href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
-            <a id="a3"
-                href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
-            <a id="a4"
-                href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series
-                Animadas</a>
+            href="Proyecto Ciclo 2 - HTML & CSS.html">Inicio</a>
+        <a id="a2"
+            href="Proyecto Ciclo 2 - HTML & CSS_2.html">Peliculas</a>
+        <a id="a3"
+            href="Proyecto Ciclo 2 - HTML & CSS_3.html">Series</a>
+        <a id="a4"
+            href="Proyecto Ciclo 2 - HTML & CSS_4.html">Series
+            Animadas</a>
             <div class="search-box">
                 <!-- <span class="search-icon">&#128269;</span> -->
-                <input id="a5" type="text" class="search-input" placeholder="Buscar">
+                <form action="https://www.google.com/search" method="GET">
+                    <input type="search" class="search-input" name="q" placeholder="Buscar" required>
+                    <!-- <button type="submit" class="search-button">Buscar</button> -->
+                </form>
             </div>
         </nav>
 
         <!-- Contenido de la pagina  -->
         <a name="Menu"></a>
+        <div class="title">
+            <h1>Lobo del Aire</h1>
+        </div>
+        <section class="main-content">
+            <div class="image-container">
+                <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Airwolf.jpg" alt="Image">
+            </div>
+            <br>
+            <div class="text-container">
+                <p>Airwolf (conocida como Lobo del Aire en Hispanoamérica y como Helicóptero en España) es una serie
+                    televisiva estadounidense de los años 1980, emitida originalmente en Estados Unidos a lo largo de
+                    cuatro temporadas, sumando entre las cuatro un total de 79 episodios. Las tres primeras temporadas
+                    fueron emitidas por primera vez de 1984 a 1986 por el canal CBS. La cuarta temporada, en la que
+                    intervinieron actores y equipos de rodaje diferentes que en las temporadas anteriores, fue emitida
+                    por primera vez por el canal USA Network en 1987 y filmada en Canadá. </p>
+
+                <h2>Historia</h2>
+                <p>El protagonista, Stringfellow Hawke (interpretado por Jan-Michael Vincent), uno de los pilotos de
+                    prueba originales de Lobo, es contratado por La Firma, una rama secreta de la CIA para recuperar a
+                    Lobo del Dr. Charles Henry Moffet, creador del helicóptero, pero que lo ha llevado al gobierno
+                    enemigo de Libia. Hawke encuentra la aeronave, pero no la devuelve a los Estados Unidos. La oculta
+                    en una cueva en el desierto y la utiliza para llevar a cabo misiones secretas para el gobierno de
+                    EUA a cambio de ayuda de La Firma para encontrar a su hermano perdido, llamado St. John Hawke,
+                    perdido en acción desde la Guerra de Vietnam. </p>
+
+                <p>También la protagonizaban Ernest Borgnine como Dominic Santini, el mejor amigo y copiloto de Hawke;
+                    Jean Bruce Scott como Caitlin O’Shannessy (a partir de la segunda temporada), reclutada como piloto
+                    de respaldo de Lobo en caso de que Hawke o Dominic no puedan volar en alguna misión; y Alex Cord
+                    como el enigmático director de La Firma, Michael Coldsmith Briggs III (nombre clave: Arcángel). </p>
+
+            </div>
+            <br>
+            <div class="video-container">
+                <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Airwolf Intro.mp4" controls></video>
+            </div>
+            <h3><a href="">[Volver al menu]</a></h3>
+        </section>
+        <br>
         <div class="title">
             <h1>CHiPs Patrulla Motorizada</h1>
         </div>
@@ -296,15 +345,104 @@
             </div>
             <br>
             <div class="text-container">
-                <p>CHiPs (conocida en Hispanoamérica como CHiPs Patrulla Motorizada o Patrulla Motorizada) es una serie de televisión emitida desde septiembre de 1977 a junio de 1983 por la cadena estadounidense NBC y en 1998 fue filmada una película con el nombre de CHiPs 99, donde el reparto estaba compuesto por los actores originales de la serie cumpliendo funciones de superiores. En 2017 se realizó la adaptación CHiPs: patrulla motorizada recargada con la actuación principal y dirección de Dax Shepard y actuación principal de Michael Peña también con Vincent D'Onofrio, Adam Brody, Rosa Salazar, Vida Guerra y Kristen Bell en papeles secundarios. </p>
+                <p>CHiPs (conocida en Hispanoamérica como CHiPs Patrulla Motorizada o Patrulla Motorizada) es una serie
+                    de televisión emitida desde septiembre de 1977 a junio de 1983 por la cadena estadounidense NBC y en
+                    1998 fue filmada una película con el nombre de CHiPs 99, donde el reparto estaba compuesto por los
+                    actores originales de la serie cumpliendo funciones de superiores. En 2017 se realizó la adaptación
+                    CHiPs: patrulla motorizada recargada con la actuación principal y dirección de Dax Shepard y
+                    actuación principal de Michael Peña también con Vincent D'Onofrio, Adam Brody, Rosa Salazar, Vida
+                    Guerra y Kristen Bell en papeles secundarios. </p>
 
                 <h2>Historia</h2>
-                <p>La serie aborda los años en servicio de los policías motorizados Jonathan "Jon" Baker (Larry Wilcox) y Francis Llewelyn "Ponch" Poncherello (Erik Estrada), miembros de la Patrulla de Caminos de California (California Highway Patrol en inglés) que se veían envueltos en situaciones por las que suelen pasar los policías (persecuciones, rescates, detención de delincuentes, etc.) siempre a bordo de sus motocicletas, una característica que hasta el día de hoy los hace recordados. Eran supervisados por el sargento Joseph "Joe" Geatrer (Robert Pine) y también coordinados con otros policías miembros de la Patrulla de Caminos de California como los oficiales Barry Baricza (Brodie Greer), Arthur "Grossie" Grossman (Paul Linkee), Jebediah Turner (Michael Dorn) y Sindy Cahill (Brianne Leary). </p>
+                <p>La serie aborda los años en servicio de los policías motorizados Jonathan "Jon" Baker (Larry Wilcox)
+                    y Francis Llewelyn "Ponch" Poncherello (Erik Estrada), miembros de la Patrulla de Caminos de
+                    California (California Highway Patrol en inglés) que se veían envueltos en situaciones por las que
+                    suelen pasar los policías (persecuciones, rescates, detención de delincuentes, etc.) siempre a bordo
+                    de sus motocicletas, una característica que hasta el día de hoy los hace recordados. Eran
+                    supervisados por el sargento Joseph "Joe" Geatrer (Robert Pine) y también coordinados con otros
+                    policías miembros de la Patrulla de Caminos de California como los oficiales Barry Baricza (Brodie
+                    Greer), Arthur "Grossie" Grossman (Paul Linkee), Jebediah Turner (Michael Dorn) y Sindy Cahill
+                    (Brianne Leary). </p>
 
             </div>
             <br>
             <div class="video-container">
                 <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Abertura - CHiPs (Seriado) (1977).mp4"
+                    controls></video>
+            </div>
+            <h3><a href="">[Volver al menu]</a></h3>
+        </section>
+        <br>
+        <div class="title">
+            <h1>El auto
+                fantástico</h1>
+        </div>
+        <section class="main-content">
+            <div class="image-container">
+                <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Knight_rider_DVD.jpg" alt="Image">
+            </div>
+            <br>
+            <div class="text-container">
+                <p>Knight Rider (conocida como El coche fantástico en España, El auto increíble en México y El auto
+                    fantástico en el resto de Hispanoamérica) es una serie de televisión estadounidense de los años
+                    ochenta. El personaje protagonista de la serie, Michael Knight (interpretado por el actor David
+                    Hasselhoff), es un defensor de los pobres y desamparados, cuyo nombre real es Michael Long, que
+                    combate la injusticia conduciendo un prototipo de automóvil de alta tecnología. El automóvil,
+                    llamado KITT (Knight Industries Two Thousand), incorpora una computadora central, que realmente es
+                    una IA (inteligencia artificial) autoconsciente, altamente inteligente y con capacidad de hablar e
+                    interactuar como si fuese una persona real. </p>
+
+                <h2>Historia</h2>
+                <p>Michael Arthur Long (interpretado por David Hasselhoff), era un honesto teniente de la policía que se
+                    encontraba liderando una investigación al poderoso grupo informático COMTRON, por espionaje
+                    industrial. Al momento de caer en cumplimiento del deber, se hallaba trabajando de incógnito junto a
+                    su compañero Muntzy (Herb Jefferson, Jr.), protegiendo a dos ejecutivos de Consolidated Chemical
+                    Corporation: Tanya Walker (Phyllis Davis) y Charles Acton (Ed Gilbert). Durante la investigación,
+                    Long se infiltra como un secuaz de Gerard Wilson (Vince Edwards), un ejecutivo de COMTRON que a su
+                    vez vigila los movimientos de Acton, a fin de robarle los planos de un sistema informático que tenía
+                    planeado, con el fin de crear un nuevo imperio a espaldas de COMTRON. </p>
+
+            </div>
+            <br>
+            <div class="video-container">
+                <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/El Auto Fantastico Intro Latino.mp4"
+                    controls></video>
+            </div>
+            <h3><a href="">[Volver al menu]</a></h3>
+        </section>
+        <br>
+        <div class="title">
+            <h1>Los Dukes de Hazzard</h1>
+        </div>
+        <section class="main-content">
+            <div class="image-container">
+                <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Los-primos-Duke.jpg" alt="Image">
+            </div>
+            <br>
+            <div class="text-container">
+                <p>The Dukes of Hazzard (también conocidos como Los Dukes de Hazzard, Los Dukes de la Suerte o Los
+                    Duques del Peligro en Hispanoamérica y El Sheriff Chiflado en España) fue una serie de televisión de
+                    Estados Unidos emitida originalmente del 26 de enero de 1979 al 8 de febrero de 1985, por la cadena
+                    CBS. Creada por Gy Waldron, consta con 147 capítulos a lo largo de siete temporadas. Se le consideró
+                    como uno de los programas con mayor audiencia durante los años setenta y ochenta (en algún momento
+                    ocupó el segundo lugar, solo después de la serie Dallas (serie de televisión), la cual era emitida
+                    justo después del programa durante el horario nocturno de los viernes por la CBS. </p>
+
+                <h2>Historia</h2>
+                <p>La serie cuenta la historia de Bo y Luke Duke, dos primos que luchan contra la injusticia en el
+                    condado de Hazzard, encabezado por el corrupto comisionado Jefferson Davis "Boss" Hogg (J.D. "Boss"
+                    Hogg) y su mano derecha, el comisario Rosco P. Coltrane. Los primos Duke se caracterizan por
+                    conducir un Dodge Charger 1969 conocido como General Lee. El nombre original de la serie, The Dukes
+                    of Hazzard, es un juego de palabras cuyo significado literal hace mención a que los protagonistas se
+                    apellidan Duke y viven en el condado llamado Hazzard, sin embargo, la frase posee una gran similitud
+                    con la expresión inglesa The dukes of hazard (Los duques del peligro), usada para señalar a los
+                    fanáticos de las experiencias extremas. </p>
+
+            </div>
+            <br>
+            <div class="video-container">
+                <video
+                    src="../Proyecto Ciclo 2 - HTML & CSS/Video/The Dukes of Hazzard 1979 - 1985 Opening and Closing Theme.mp4"
                     controls></video>
             </div>
             <h3><a href="">[Volver al menu]</a></h3>
@@ -326,6 +464,7 @@
 
                 <input type="Reset" value="Limpiar">
             </form>
+            <br>
             <!-- Iconos en el footer -->
             <div class="footer-icons">
                 <img src="../Proyecto Ciclo 2 - HTML & CSS/img/facebook.png" alt="Logo">
@@ -333,6 +472,9 @@
                 <img src="../Proyecto Ciclo 2 - HTML & CSS/img/logotipo-de-instagram.png" alt="Logo">
 
             </div>
+            <br>
+            <!-- Agregar el texto de copyright -->
+            <p class="copyright">Copyright © 2023 MOVIES. All rights reserved.</p>
         </footer>
     </body>
 

@@ -20,7 +20,7 @@
             background-color: rgb(235, 53, 53);
             padding: 10px;
             font-family: 'Pacifico', cursive;
-            font-size: 35px;
+            font-size: 30px;
         }
 
         .logo {
@@ -51,11 +51,11 @@
 
         }
 
-        .search-input {
+        /* .search-input {
 
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
+        } */
 
         .search-icon {
             margin-left: 8px;
@@ -65,7 +65,7 @@
         nav a {
             text-decoration: none;
             color: #ffffff;
-            padding: 13px 15px;
+            padding: 20px 15px;
             border-radius: 5px;
             background-color: #2980b9;
         }
@@ -158,6 +158,7 @@
         input[type="submit"]:hover {
             background-color: #1f618d;
         }
+
         input[type="Reset"] {
             background-color: #2980b9;
             color: #ffffff;
@@ -221,6 +222,7 @@
                 display: grid;
                 align-items: center;
                 grid-column: 1/ span 2;
+                margin: auto;
             }
         }
 
@@ -256,6 +258,11 @@
                 grid-column: 1/ 2;
             }
         }
+
+        /* Agregar el texto de copyright */
+        .copyright {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -269,17 +276,20 @@
 
     <nav>
         <a id="a1"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS.html">Inicio</a>
+            href="Proyecto Ciclo 2 - HTML & CSS.html">Inicio</a>
         <a id="a2"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_2.html">Pelicualas</a>
+            href="Proyecto Ciclo 2 - HTML & CSS_2.html">Peliculas</a>
         <a id="a3"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_3.html">Series</a>
+            href="Proyecto Ciclo 2 - HTML & CSS_3.html">Series</a>
         <a id="a4"
-            href="http://127.0.0.1:5500/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS/Proyecto%20Ciclo%202%20-%20HTML%20&%20CSS_4.html">Series
+            href="Proyecto Ciclo 2 - HTML & CSS_4.html">Series
             Animadas</a>
         <div class="search-box">
             <!-- <span class="search-icon">&#128269;</span> -->
-            <input id="a5" type="text" class="search-input" placeholder="Buscar">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="search" class="search-input" name="q" placeholder="Buscar" required>
+                <!-- <button type="submit" class="search-button">Buscar</button> -->
+            </form>
         </div>
     </nav>
     <!-- Contenido de la pagina  -->
@@ -293,15 +303,147 @@
         </div>
         <br>
         <div class="text-container">
-            <p>G.I. Joe: A Real American Hero (también conocida como Action Force en el Reino Unido) es una serie animada de televisión estadounidense creada por Ron Friedman,1​ basada en la línea de figuras de acción de Hasbro y en el cómic G.I. Joe: A Real American Hero publicado por Marvel. Fue emitida por redifusión entre 1985 y 1986,2​ se produjeron un total de 95 episodios.</p>
-            
+            <p>G.I. Joe: A Real American Hero (también conocida como Action Force en el Reino Unido) es una serie
+                animada de televisión estadounidense creada por Ron Friedman,basada en la línea de figuras de acción
+                de Hasbro y en el cómic G.I. Joe: A Real American Hero publicado por Marvel. Fue emitida por redifusión
+                entre 1985 y 1986,2​ se produjeron un total de 95 episodios.</p>
+
             <h2>Historia</h2>
-            <p>Cuando Hasbro lanzó al mercado la línea de figuras de acción G.I. Joe: A Real American Hero en 1982 junto al cómic publicado por Marvel, comisionaron a Sunbow Productions para producir una serie de comerciales animados de 30 segundos para promocionar tanto las historietas como los juguetes. La popularidad de los comerciales llevó a la realización de una miniserie El arma Mass que se emitió por primera vez en 1983.</p>
-            <p>La trama se centra en el dispositivo M.A.S.S., un potente teletransportador de materia, y el enfrentamiento entre el comando G.I. Joe y la organización terrorista Cobra por hacerse con el dispositivo. Una segunda parte de la miniserie se estrenó en 1984, llamada La venganza de Cobra. Ambas producciones fueron escritas por Ron Friedman. Luego de la popularidad de las miniseries, en 1985 se estrena otra titulada La pirámide de la oscuridad antesala de la primera temporada regular de G.I. Joe: A Real American Hero compuesta por 55 episodios, seguida de una segunda de 30 al año siguiente, que comienza de nuevo con otros cinco capítulos enlazados, bajo el título Elévate, serpiente, elévate. Para terminar esta etapa, salió en el mercado del video doméstico una película animada G.I. Joe: La película (1987), que en realidad iba a ser otra miniserie de inicio para una tercera temporada, que nunca llegó a realizarse. La historia se volvería a retomar en 1989, ya con otra productora, DIC Entertainment; miniserie y otras dos temporadas hasta 1992, fecha en la que termina la generación clásica de la franquicia.</p>
+            <p>Cuando Hasbro lanzó al mercado la línea de figuras de acción G.I. Joe: A Real American Hero en 1982 junto
+                al cómic publicado por Marvel, comisionaron a Sunbow Productions para producir una serie de comerciales
+                animados de 30 segundos para promocionar tanto las historietas como los juguetes. La popularidad de los
+                comerciales llevó a la realización de una miniserie El arma Mass que se emitió por primera vez en 1983.
+            </p>
+            <p>La trama se centra en el dispositivo M.A.S.S., un potente teletransportador de materia, y el
+                enfrentamiento entre el comando G.I. Joe y la organización terrorista Cobra por hacerse con el
+                dispositivo. Una segunda parte de la miniserie se estrenó en 1984, llamada La venganza de Cobra. Ambas
+                producciones fueron escritas por Ron Friedman. Luego de la popularidad de las miniseries, en 1985 se
+                estrena otra titulada La pirámide de la oscuridad antesala de la primera temporada regular de G.I. Joe:
+                A Real American Hero compuesta por 55 episodios, seguida de una segunda de 30 al año siguiente, que
+                comienza de nuevo con otros cinco capítulos enlazados, bajo el título Elévate, serpiente, elévate. Para
+                terminar esta etapa, salió en el mercado del video doméstico una película animada G.I. Joe: La película
+                (1987), que en realidad iba a ser otra miniserie de inicio para una tercera temporada, que nunca llegó a
+                realizarse. La historia se volvería a retomar en 1989, ya con otra productora, DIC Entertainment;
+                miniserie y otras dos temporadas hasta 1992, fecha en la que termina la generación clásica de la
+                franquicia.</p>
         </div>
         <br>
         <div class="video-container">
             <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/GI Joe 1080p HD Bluray Intro.mp4" controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <br>
+    <div class="title">
+        <h1>Thundercats</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Thunderscats.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>Thundercats (estilizado como ThunderCats, conocida en España e Hispanoamérica como ThunderCats: Los
+                felinos cósmicos) es una serie animada estadunidense de televisión que fue producida por Rankin/Bass
+                Productions —misma que creó a los Halcones Galácticos, Los Tigres del Mar, esta última fue creada como
+                parte de la serie de libros de historietas. Fue estrenada el 23 de enero de 1985 y está basada en los
+                personajes creados por Theodore Walter «Tobin» Wolf; dirigida por el japonés Katsuhito Akiyama. El
+                escritor fue Leonard Starr. La serie sigue las aventuras de un grupo de felinos humanoides
+                extraterrestres. </p>
+
+            <h2>Historia</h2>
+            <p>La animación fue realizada por el estudio Pacific Animation Corporation (absorbida en 1989 por Walt
+                Disney Animation Japan). Para lograr mayor interés de la audiencia y a pesar de que la serie es de
+                origen estadounidense, se realizó una mezcla entre el estilo de dibujos estadounidenses (basados en la
+                historieta tradicional) y el anime —estilo de animación japonés, basado en los mangaNota  que, por ese
+                entonces, era algo aún muy novedoso en Estados Unidos, aunque bastante conocido en Hispanoamérica.
+            </p>
+            <p>La primera temporada salió al aire en Estados Unidos el 23 de junio de 1985 y contó con 65 episodios; fue
+                seguida por la película para televisión titulada: ThunderCats-Oh! en 1986. Las segunda, tercera y cuarta
+                temporadas fueron emitidas en entregas de 20 episodios cada una, siendo los primeros una historia en
+                cinco partes.</p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video src="../Proyecto Ciclo 2 - HTML & CSS/Video/Thundercats Intro Latino.mp4" controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <br>
+    <div class="title">
+        <h1>Halcones Galácticos</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Los_halcones_galaacticos.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>Los Halcones Galácticos (Silverhawks en inglés) es una serie animada estadounidense creada por Arthur
+                Rankin y Jules Bass y distribuida por Lorimar-Telepictures en 1986 con un total de 65 episodios. La
+                animación fue realizada por el estudio japonés Pacific Animation Corporation. Fue el sucesor de
+                ThunderCats y al igual que este, se publicó una serie de cómics de Los Halcones Galácticos publicada por
+                Star Comics, sello editorial de Marvel Comics.</p>
+
+            <h2>Historia</h2>
+            <p>Rankin/Bass siguiendo su éxito en Thundercats creó esta serie acerca de un equipo de héroes en el siglo
+                XXIX que fueron hechos con cuerpos y alas de metal para combatir al crimen organizado en la Galaxia de
+                El Limbo.</p>
+
+            <p>El Capitán Telescopio reclutó a los Halcones Galácticos para combatir a Monstruón, un extraterrestre que
+                puede transformarse en armadura metálica con la ayuda de la Estrella Lunar de Limbo en la cámara de
+                Transformación. La célebre frase de Monstruón es "Estrella Lunar de Limbo: Dame la Fuerza, el Poder, la
+                Facultad de Ser ¡Invencible!", además cuenta con la ayuda de la mafia galáctica: Esclavo, el Barón
+                Sierra, Bucéfalo, Vendaval, El Mago Cronos, Molecular, Naipe, Artillero y de la locura musical de
+                Melodía. </p>
+        </div>
+        <br>
+        <div class="video-container">
+            <video
+                src="../Proyecto Ciclo 2 - HTML & CSS/Video/Silver Hawks _ Halcones Galácticos - Opening (Latino) (HD) (HQ).mp4"
+                controls></video>
+        </div>
+        <h3><a href="">[Volver al menu]</a></h3>
+    </section>
+    <br>
+    <div class="title">
+        <h1>El Conde Pátula</h1>
+    </div>
+    <section class="main-content">
+        <div class="image-container">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/Condepatula.jpg" alt="Image">
+        </div>
+        <br>
+        <div class="text-container">
+            <p>Count Duckula (conocida como El Conde Pátula en Hispanoamérica y como El Conde Duckula en España) es una
+                serie de televisión británica de dibujos animados que salió al aire por primera vez el 6 de septiembre
+                de 1988. Creada por la compañía Cosgrove Hall Films, producida por Thames Television y emitida
+                originalmente por la cadena inglesa ITV, sacó 65 episodios que fueron emitidos en la televisión abierta
+                a comienzos de la década de 1990 en los países hispanohablantes. La serie es una parodia de la historia
+                del conde Drácula. Situado en Transilvania (una región en Rumania), el pato Duckula vive en un castillo
+                tenebroso conocido como el Castillo Duckula, junto a su mayordomo, Igor, y su gran niñera Nanny (que
+                significa "niñera" en inglés), siempre con un cabestrillo para el brazo derecho; en Hispanoamérica se la
+                conoce como Nana, pero en España se mantuvo el nombre original. Casi todos los personajes de la serie
+                son aves antropomorfas. </p>
+
+            <h2>Historia</h2>
+            <p>La historia (tal y como se muestra en la secuencia de introducción de cada episodio) es que Duckula ha
+                estado activo como un vampiro durante muchos siglos. Sólo podía ser destruido por la exposición a la luz
+                solar o atravesándole el corazón con una estaca de madera. De hecho, Duckula ha muerto numerosas veces,
+                pero siempre regresa a través de un ritual místico, que se realiza una vez cada siglo, cuando la Luna
+                está situada en la Octava Casa de Acuario (la introducción de cada capítulo muestra el ritual de
+                resurrección realizado por Igor). Cada vez que el vampiro resucita, posee poco o ningún recuerdo de su
+                vida pasada, por lo que cada encarnación es libre de desarrollar su propia personalidad y perseguir sus
+                propios intereses personales. El vampiro es, pues, capaz de crear sus propias dinastías de Condes
+                Duckula. Las generaciones anteriores incluyen caballeros, magos, científicos, artistas, egiptólogos,
+                entre otros. </p>
+
+        </div>
+        <br>
+        <div class="video-container">
+            <video
+                src="../Proyecto Ciclo 2 - HTML & CSS/Video/El Conde Pátula (Count Duckula) - Opening - Español Latino.mp4"
+                controls></video>
         </div>
         <h3><a href="">[Volver al menu]</a></h3>
     </section>
@@ -319,9 +461,10 @@
             <input type="text" id="email" name="email" required>
 
             <input type="submit" value="Enviar">
-            
+
             <input type="Reset" value="Limpiar">
         </form>
+        <br>
         <!-- Iconos en el footer -->
         <div class="footer-icons">
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/facebook.png" alt="Logo">
@@ -329,6 +472,9 @@
             <img src="../Proyecto Ciclo 2 - HTML & CSS/img/logotipo-de-instagram.png" alt="Logo">
 
         </div>
+        <br>
+        <!-- Agregar el texto de copyright -->
+        <p class="copyright">Copyright © 2023 MOVIES. All rights reserved.</p>
     </footer>
 </body>
 
