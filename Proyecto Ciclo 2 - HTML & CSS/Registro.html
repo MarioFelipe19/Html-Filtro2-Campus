@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        /* Tu estilo CSS aquí */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(235, 53, 53);
+            padding: 10px;
+            font-family: 'Pacifico', cursive;
+            font-size: 30px;
+            
+        }
+        .logo {
+            text-align: left;
+            margin: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(235, 53, 53);
+            padding: 3px;
+            margin: 1px;
+            border-radius: 10px;
+        }
+
+       
+
+        .registration-form {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .registration-form form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .registration-form button {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .registration-form button:hover {
+            background-color: #1f618d;
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(5, auto);
+                gap: 1%;
+                text-align: center;
+            }
+
+            .registration-form {
+                margin: 10px;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            nav {
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(5, auto);
+                gap: 3%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Proyecto Ciclo 2 - HTML & CSS/img/LogoPagina" alt="Logo">
+        </div>
+        <h1>La Historia de las Peliculas</h1>
+    </header>
+
+    <nav>
+ 
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="registration-form">
+        <h2>Registro de Usuario</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <footer>
+     
+    </footer>
+</body>
+</html>
