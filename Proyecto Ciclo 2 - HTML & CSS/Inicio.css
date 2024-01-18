@@ -1,0 +1,249 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: rgb(235, 53, 53);
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.logo {
+    text-align: left;
+    margin: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Menu de la pagina  */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(235, 53, 53);
+    padding: 3px;
+    margin: 1px;
+    border-radius: 10px;
+   
+}
+
+/* caja de busqueda */
+.search-box {
+    display: flex;
+    align-items: center;
+   
+}
+
+/* .search-input {
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+} */
+
+.search-icon {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: #2980b9;
+    
+}
+
+nav a:hover {
+    background-color: #1f618d;
+}
+
+
+/* Carrusel de imágenes */
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: auto;
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+
+}
+
+/* formulario de sugerencias  */
+footer {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f618d;
+}
+
+input[type="Reset"] {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="Reset"]:hover {
+    background-color: #1f618d;
+}
+
+/* Iconos en el footer */
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* Ajusta el ancho según sea necesario */
+    margin: 0 auto;
+    /* Centra los iconos */
+}
+
+.footer-icons {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer-icons img {
+    width: 5%;
+}
+
+/* Media Queries para hacer responsive */
+@media (max-width:480px) {
+    nav {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        gap: 1%;
+        text-align: center;
+    }
+    
+    
+    #al {
+        grid-column: 1/ span 2;
+        grid-row: 1/ span 1;
+    }
+
+    #a1 {
+        grid-column: 1/ span 2;
+    }
+
+    #a2 {
+        grid-column: 1/ span 2;
+    }
+
+    #a3 {
+        grid-column: 1/ span 2;
+    }
+    #a4 {
+        grid-column: 1/ span 2;
+    }
+
+    .search-box {
+        display: grid;
+        align-items: center;
+        grid-column: 1/ span 2;
+        margin: auto;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(5, auto);
+        gap: 3%;
+        text-align: center;
+    }
+
+    #al {
+        grid-column: 1/ 2;
+    }
+
+    #a1 {
+        grid-column: 2/ span 3;
+    }
+
+    #a2 {
+        grid-column: 1/ 2;
+    }
+
+    #a3 {
+        grid-column: 2/ span 3;
+    }
+
+    #a4 {
+        grid-column: 2/ span 3;
+    }
+    .search-box {
+    display: grid;
+    align-items: center;
+    grid-column: 1/ 2;
+}
+
+}
+
+/* Agregar el texto de copyright */
+.copyright {
+    margin-top: 10px;
+}
